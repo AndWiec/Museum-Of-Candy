@@ -1,23 +1,42 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
+    max-width: 1920px;
+    margin: auto;
     background-color: #f5d9d5;
     font-family: "Nunito", sans-serif;
 }
 h1 {
     color: #EA1C2C;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     font-weight: 100;
     text-transform: uppercase;
 }
 p {
     color: #f15a8f;
     font-weight: 100;
-    font-size: 1.125rem;
-    line-height: 2;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 #top__navbar {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 100;
+    margin-left: -1rem;
+}
+nav {
+    background-color: #c2ebf9;
+    transition: all ease-in-out 1s;
+}
+
+.scrolled {
+    background-color: #dec0de;
+    transition: ease-in-out 1s;
+}
+
+.lead {
+    font-size: 1rem;
 }
 
 #top__navbar .nav-link {
@@ -31,6 +50,9 @@ p {
     color: #ea1c2c;
 }
 /*navigation ends*/
+#headingGroup {
+    min-height: 0;
+}
 #headingGroup h2{
     text-transform: uppercase;
     font-size: 2.5rem;
@@ -38,10 +60,39 @@ p {
 #headingGroup span {
     color: #EA1C2C;
 }
-
-@media (max-width: 1200px) {
-    
-#headingGroup h2{
-    font-size: 3rem;
+.icon a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #f15a8f;
 }
+.icon i {
+    padding: .5rem;
+}
+.icon a:hover .icon-facebook{
+    background-color: #3b5998;
+    color: white;
+    border-radius: 50%;
+}
+.icon a:hover .icon-instagram{
+    background-image: linear-gradient(to top right, #FFDC80, #FCAF45, #F77737, #F56040, #FD1D1D, #E1306C, #C13584, #833AB4, #5851DB, #405DE6);
+    color: white;
+    border-radius: 50%;
+}
+.icon a:hover .icon-twitter{
+    background-color: #1DA1F2;
+    color: white;
+    border-radius: 50%;
+}
+
+@media (min-width: 1480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    #headingGroup h2{
+        font-size: 4rem;
+    }
+    .lead,
+    .icon a {
+        font-size: 1.5rem;
+    }
 }
